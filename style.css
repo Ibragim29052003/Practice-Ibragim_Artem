@@ -455,3 +455,426 @@ span {
   border-radius: 7px;
 }
 
+
+
+
+/* style.ss (стили для contact, about, blog и shop) */
+
+/* Общие стили секций (чтобы не дублировать в каждом файле) */
+.section-p1 {
+  padding: 40px 80px; 
+}
+
+.section-m1 {
+  margin: 40px 0; 
+}
+
+/* Стили для заголовков (h1) секций */
+.product-section h1,
+.blog-page h1,
+.about-page h1,
+.contact-page h1 {
+  text-align: center;
+  font-size: 2.5em; 
+  margin-bottom: 20px;
+}
+
+/* Shop Page */
+#shop-banner {
+  background-image: url("images/banner/b1.jpg"); 
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#shop-banner h2,
+#blog-banner h2 {
+  color: #fff;
+  font-size: 3em;
+  padding: 14px;
+}
+
+.pro-collection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Чтобы карточки переносились на новую строку */
+}
+
+.product-cart {
+  width: 23%; /* Чтобы в строке было примерно 4 карточки */
+  border: 1px solid #cce7d0;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative; /*  Для позиционирования значка корзины */
+}
+
+.product-cart img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.product-cart span {
+  color: #606063;
+  font-size: 12px;
+}
+
+.product-cart h4 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-cart .stars {
+  display: flex;
+  margin-top: 7px;
+}
+
+.product-cart .stars i {
+  font-size: 12px;
+  color: gold;
+}
+
+.product-cart .price {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #088178;
+}
+
+.product-cart a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center; /*  Центрирование значка внутри ссылки */
+}
+
+.product-cart a i {
+  line-height: inherit; /*  Наследуем line-height, чтобы иконка была по центру */
+}
+
+/* Blog Page */
+#blog-banner {
+  background-image: url("images/banner/b19.jpg"); 
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#blog {
+  padding: 20px; /* Общий отступ для всей секции блога */
+}
+
+.blog-box {
+  display: flex;
+  align-items: center; /* Выравнивание элементов по вертикали */
+  width: 100%; /* Блог-посты занимают всю ширину контейнера */
+  margin-bottom: 30px; /* Отступ между блог-постами */
+  border-bottom: 1px solid #ccc; /* Добавляем разделитель между блог-постами */
+  padding-bottom: 20px; /* Отступ снизу от разделителя */
+}
+
+.blog-img {
+  width: 30%; /* Изображение занимает 30% ширины */
+  margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.blog-img img {
+  width: 100%; /* Изображение занимает всю ширину контейнера */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  object-fit: cover; /* Заполнение контейнера с обрезкой */
+  border-radius: 10px; /* Скругление углов */
+}
+
+.blog-details {
+  width: 70%; /* Текст занимает 70% ширины */
+}
+
+.blog-details h4 {
+  font-size: 1.5em; /* Размер заголовка */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.blog-details p {
+  line-height: 1.6; /* Высота строки */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+.blog-details a {
+  color: #007bff; /* Цвет ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.blog-details a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* About Page */
+#about-head {
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Добавляем общий отступ для секции */
+}
+
+#about-head img {
+  width: 40%; /* Ширина изображения */
+  height: auto; /* Автоматическая высота */
+  object-fit: cover; /* Заполнение контейнера с обрезкой */
+  border-radius: 10px; /* Скругление углов */
+  margin-right: 30px; /* Отступ справа от изображения */
+}
+
+#about-head div {
+  width: 60%; /* Ширина текстового контента */
+}
+
+#about-head div h2 {
+  font-size: 2em; /* Размер заголовка */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+#about-head div p {
+  line-height: 1.6; /* Высота строки */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+#about-head div abbr {
+  text-decoration: none; /* Убираем стандартное подчеркивание для abbr */
+  font-style: italic; /* Курсивное отображение */
+  color: #555; /* Цвет текста */
+}
+
+#about-head div marquee {
+  padding: 10px;
+  background-color: #f0f0f0; /* Цвет фона */
+  border: 1px solid #ccc; /* Рамка */
+  border-radius: 5px; /* Скругление углов */
+}
+
+/* Contact Page */
+#contact-details {
+  display: flex;
+  justify-content: space-between; /* Распределение элементов по краям */
+  align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+  padding: 20px; /* Общий отступ */
+}
+
+#contact-details .details {
+  width: 40%; /* Ширина блока с деталями */
+}
+
+#contact-details .details span,
+#form-details form span {
+  font-size: 14px; /* Размер шрифта для подзаголовков */
+  color: #555; /* Цвет текста */
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 2em; /* Размер заголовков */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+#contact-details .details h3 {
+  font-size: 1.5em; /* Размер подзаголовков */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+#contact-details .details ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+}
+
+#contact-details .details li {
+  display: flex;
+  align-items: center; /* Выравнивание элементов по вертикали */
+  margin-bottom: 10px; /* Отступ между элементами списка */
+}
+
+#contact-details .details li i {
+  font-size: 1.2em; /* Размер иконки */
+  margin-right: 10px; /* Отступ справа от иконки */
+  color: #088178; /* Цвет иконки */
+}
+
+#contact-details .details li p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#contact-details .map {
+  width: 55%; /* Ширина карты */
+  height: 400px; /* Высота карты */
+  border: 1px solid #ccc; /* Рамка */
+}
+
+#contact-details .map iframe {
+  width: 100%; /* Ширина iframe на всю ширину контейнера */
+  height: 100%; /* Высота iframe на всю высоту контейнера */
+}
+
+/* Форма обратной связи */
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 50px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+}
+
+#form-details form button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+#form-details .people div img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50%; /*  Круглые изображения */
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px; /* Уменьшенные отступы */
+  }
+
+  .pro-collection {
+    justify-content: center; /* Более равномерное распределение карточек */
+  }
+
+  .product-cart {
+    width: 45%; /* Две карточки в ряд */
+    margin-bottom: 30px;
+  }
+
+  /* Blog */
+  #blog {
+    padding: 10px; /* Уменьшаем общий отступ */
+  }
+
+  .blog-box {
+    flex-direction: column; /* Вертикальный макет на маленьких экранах */
+    align-items: flex-start;
+  }
+
+  .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .blog-details {
+    width: 100%;
+  }
+
+  /* About */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    width: 100%; /*  Текст занимает всю ширину */
+    padding-left: 0;
+  }
+
+  /* Contact */
+  #contact-details {
+    flex-direction: column; /*  В колонку на маленьких экранах */
+  }
+
+  #contact-details .details {
+    width: 100%; /*  Детали занимают всю ширину */
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map {
+    width: 100%; /*  Карта на всю ширину */
+    height: 300px; /*  Уменьшаем высоту карты */
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #form-details .people {
+    display: none; /* Скрываем секцию people на маленьких экранах */
+  }
+}
+
+@media (max-width: 477px) {
+  .product-cart {
+    width: 100%; /* Одна карточка в ряд */
+  }
+}
