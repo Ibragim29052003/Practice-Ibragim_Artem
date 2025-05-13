@@ -215,7 +215,7 @@ site/
 
 ## Отчёт
 
-Файлы находятся в папке reports/:
+Файлы находятся в папке reports/:[practice_report](/reports/practice_report_template.docx)
 
 ## Прогресс в Git
 
