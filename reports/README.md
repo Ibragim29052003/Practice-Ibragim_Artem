@@ -1,5 +1,8 @@
 # Отчёты в бинарных форматах
 
-- В этот файл добавьте ссылки на файлы отчётов и краткое описание к ним.
-- Файлы могут быть в форматах DOCX, PDF и др.
-- Структура отчёта по проектной практике приведена в файле [practice_report_template.docx](practice_report_template.docx).
+Структура отчёта по проектной практике приведена в файле [practice_report_template.docx](practice_report_template.docx).
+
+Отчёт по проектной практике в рамках проекта FutureTech "3D-принтер для эластичных материалов" представлен в двух форматах:
+- Отчёт в формате [PDF](/reports/practice_report_PDF.pdf)
+- Отчёт в формате [DOCX](/reports/practice_report_DOCX.docx)
+
